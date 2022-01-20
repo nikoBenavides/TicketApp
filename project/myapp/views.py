@@ -43,7 +43,7 @@ def tickets():
             elif loan.deliveryDate < loan.endDate:
                 loan.ticket=0
                 print(loan.user,loan.ticket)
-    return loan
+    return loans
 
 
         

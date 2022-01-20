@@ -37,7 +37,7 @@
                         </tr>
                     </thead>
                     <tbody>
-                        {% for loan in tickets_loans %}
+                        {% for loan in tickets_list %}
 
                         <tr>
                             <td>{{loan.user}}</td>
@@ -46,7 +46,7 @@
                             <td>{{loan.beginDate}}</td>
                             <td>{{loan.endDate}}</td>
                             <td>{{loan.deliveryDate}}</td>
-                            <td>{{loan.ticket}}</td>
+                            <td>${{loan.ticket}}</td>
                         </tr>
                         {% endfor %}
                     </tbody>
