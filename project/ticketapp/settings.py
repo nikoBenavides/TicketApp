@@ -76,11 +76,12 @@ WSGI_APPLICATION = 'ticketapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'ticketDB',
-        'USER': 'postgres',
-        'PASSWORD': 'admin',
-        'HOST':'localhost'
+        'ENGINE': 'django.db.backends.postgresql_psycopg2',
+        'NAME': 'd1h103a02jm4aj',
+        'USER': 'oqiaviykytrlaz',
+        'PASSWORD': '911964307c83b126ca53da3e1deb3cb3bade637052d18b13736f86586a583f98',
+        'HOST':'ec2-18-234-17-166.compute-1.amazonaws.com',
+        'PORT':'5432'
     }
 }
 
