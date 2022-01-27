@@ -25,7 +25,7 @@ SECRET_KEY = 'django-insecure-d#*nyc8e=_4t*csl=!l5r71!*8)(x@fflsy)%*_=ws((u9=2)4
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['ticketapplive.herokuapp.com/']
+ALLOWED_HOSTS = []
 
 
 # Application definition
@@ -76,13 +76,11 @@ WSGI_APPLICATION = 'ticketapp.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.postgresql_psycopg2',
-        'NAME': 'd1h103a02jm4aj',
-        'USER': 'oqiaviykytrlaz',
-        'PASSWORD': '911964307c83b126ca53da3e1deb3cb3bade637052d18b13736f86586a583f98',
-        'HOST':'ec2-18-234-17-166.compute-1.amazonaws.com',
-        'PORT':'5432'
-
+        'ENGINE': 'django.db.backends.postgresql',
+        'NAME': 'ticketDB',
+        'USER': 'postgres',
+        'PASSWORD': 'admin',
+        'HOST':'localhost'
     }
 }
 
